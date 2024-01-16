@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demoweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="header">
+
+    <div class="left">
+        <h3>Follow On:</h3>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+    </div>
+
+    <div class="center">
+        <h1>FOOD CAFE</h1>
+    </div>
+
+    <div class="right">
+        <i class="fa-solid fa-earth-americas" style="color: white; padding-right: 15px;"></i>
+        <select><option>English</option>
+            <option>Italian</option>
+            <option>France</option>
+            <option>Spanish</option>
+            <option>Poland</option>
+            <option>German</option>
+        </select>
+
+        <h3 onclick=showsidebar() class="login">LOGIN</h3>
+    
+    </div>
+
+</div>
+
+
+    <div class="dropdown-main">
+        <div class="dropdown">
+        <span onclick="showhide()">HOME</span>
+        <div id="h" class="dropdown-content">
+        <p>HOME1</p>
+        <p>HOME2</p>
+        <p>HOME3</p>
+
+    </div>
+
+    <div class="dropdown">
+        <span onclick="showhide1()">ABOUT US</span>
+        <div id="a" class="dropdown-content">
+        <p>who we are</p>
+        <p>Team</p>
+        <p>FAQ</p>
+
+    </div>
+
+    <div class="dropdown">
+        <span onclick="showhide2()">SERVICES</span>
+        <div id="s" class="dropdown-content">
+        <p>services1</p>
+        <p>services2</p>
+        <p>services3</p>
+
+    </div>
+
+    <div class="dropdown">
+        <span onclick="showhide3()">GALLERY</span>
+        <div id="g" class="dropdown-content">
+        <p>gallery1</p>
+        <p>gallery2</p>
+        <p>gallery3</p>
+
+    </div>
+
+    <div class="dropdown">
+        <span onclick="showhide4()">CONTACT US</span>
+        <div id="c" class="dropdown-content">
+        <p>contact1</p>
+        <p>contact2</p>
+        <p>contact3</p>
+
+    </div>
+
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+         
+          <img src="beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="cascade-boat-clean-china-natural-rural.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img src="painting-mountain-lake-with-mountain-background.jpg" style="width:100%">
+          
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+
+        
+
+
+
+
+
+
+<div id="button" class="button" style="cursor: pointer;">
+    <h2 onclick="changeimg()" class="btn1">home</h2>
+    <h2 onclick="changeimg1()" class="btn2">services</h2>
+    <h2 onclick="changeimg2()" class="btn3">contact</h2>
+
+</div>
+
+<div class="img">
+
+    <img id="img1" class="img1" src="img1.jpg" alt="">
+</div>
+
+<!-- <div class="btns">
+    <button onclick="coffee()">coffee</button>
+    <button onclick="colddrink()">colddrink</button>
+    <button>fastfood</button>
+    <button>tea</button>
+    <button>all</button>
+
+</div> -->
+
+<!-- <div class="box">
+    <div class="box1">
+        <img id="cof" class="cof1" src="cof1.jfif" alt="">
+        <img id="col" class="col1" src="col1.jpg" alt="">
+    </div>
+    <div class="box2">
+        <img id="cof1" class="cof2" src="cof2.png" alt="">
+        <img id="col1" class="col2" src="col2.jpg" alt="">
+
+    </div>
+    <div class="box3">
+        <img id="cof2" class="cof3" src="cog3.jpg" alt="">
+        <img id="col2" class="col3" src="col3.jpg" alt="">
+
+    </div>
+    <div class="box4">
+        <img id="cof3" class="cof4" src="cof4.webp" alt="">
+        <img id="col3" class="col4" src="col4.webp" alt="">
+
+    </div>
+    
+</div> -->
+
+<div class="main2">
+    <p href="#" class="para" id="toggleButton" onclick="toggleVisibility()">Coffee</p>
+    <p href="#" class="para" id="toggleButton1" onclick="toggleVisibility1()">Colddrink</p>
+    <p href="#" class="para" id="toggleButton2" onclick="toggleVisibility2()">Fastfood</p>
+    <p href="#" class="para" id="toggleButton3" onclick="toggleVisibility3()">Tea</p>
+    <p href="#" class="para" id="toggleButton4" onclick="toggleVisibility4()">All</p>
+
+    <div class="image-container" id="coffeeImages" style="display: flex">
+        <div>
+            <img src="cof1.jfif" alt="Image 1">
+            <p>Cappuccino</p>
+        </div>
+        <div>
+            <img src="cof2.png" alt="Image 2">
+            <p>Espresso</p>
+        </div>
+        <div>
+            <img src="cog3.jpg" alt="Image 3">
+            <p>Caffe Latte</p>
+        </div>
+        <div>
+            <img src="cof4.webp" alt="Image 4">
+            <p>Cold Brew</p>
+        </div>
+    </div>
+
+    <div class="image-container" id="colddrinkImages" style="display: none">
+        <div>
+            <img src="col1.jpg" alt="Image 1">
+            <p>Thumbs Up</p>
+        </div>
+        <div>
+            <img src="col2.jpg" alt="Image 2">
+            <p>Mountain Dew</p>
+        </div>
+        <div>
+            <img src="col3.jpg" alt="Image 3">
+            <p>Sting</p>
+        </div>
+        <div>
+            <img src="col4.webp" alt="Image 4">
+            <p>7 Up</p>
+        </div>
+    </div>
+
+    <div class="image-container" id="fastfoodImages" style="display: none">
+        <div>
+            <img src="fas1.webp" alt="Image 1">
+            <p>Vadapav</p>
+        </div>
+        <div>
+            <img src="fas2.jfif" alt="Image 2">
+            <p>Pizza</p>
+        </div>
+        <div>
+            <img src="fas3.jfif" alt="Image 3">
+            <p>Burger</p>
+        </div>
+        <div>
+            <img src="fas4.jpg" alt="Image 4">
+            <p>Noodles</p>
+        </div>
+    </div>
+
+
+    <div class="image-container" id="teaImages" style="display: none">
+        <div>
+            <img src="t1.jpg" alt="Image 1">
+            <p>Black Tea</p>
+        </div>
+        <div>
+            <img src="t2.jpg" alt="Image 2">
+            <p>Herbal Tea</p>
+        </div>
+        <div>
+            <img src="t3.jfif" alt="Image 3">
+            <p>Oolong Tea</p>
+        </div>
+        <div>
+            <img src="t4.jpg" alt="Image 4">
+            <p>Green Tea</p>
+        </div>
+    </div>
+
+    <div class="image-container" id="allImages" style="display: none">
+        <div>
+            <img src="cof1.jfif" alt="Image 1">
+            <p>Cappuccino</p>
+        </div>
+        <div>
+           
+        </div>
+        <div>
+            <img src="col1.jpg" alt="Image 1">
+            <p>Thumbs Up</p>
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            <img src="fas1.webp" alt="Image 3">
+            <p>Fastfood</p>
+        </div>
+        <div>
+            <img src="t1.jpg" alt="Image 4">
+            <p>Tea</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="sidebar">
+
+    <li onclick=hidesidebar()><i style="color: black; text-decoration: none;" class="fa-solid fa-xmark"> FOOD CAFE</i></li>
+    
+    <p> <label>Email Id:</label><br>
+        <input type="email" placeholder="email id"><br></p><br>
+        <p><label>Password:</label>
+        <input type="password" placeholder="password"><br></p><br>
+
+        <button>Submit</button>
+    
+
+    
+</div>
+
+<div style="background-color: aqua; height: 500px;background-repeat: no-repeat;
+    background-position: center; background-size: cover; margin-right: 100px;">
+    
+<div class="regisbox">
+    <div class="rbox">
+<h2 style="color: white; text-align: center; padding-top: 30px; margin-bottom: 20px;">GET IN TOUCH</h2>
+
+<input type="Name" placeholder="name"> <input type="email" placeholder="email id"><br></p><br>
+<input type="password" placeholder="password"><br></p><br>
+<textarea name="message" placeholder="your message" id="" cols="30" rows="10"></textarea><br>
+<button>Submit</button>
+</div>
+</div>
+
+
+</div>
+
+<script src="demoweb.js"></script>
+</body>
+</html>
